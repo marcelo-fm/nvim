@@ -44,9 +44,9 @@ return {
     end,
     keys = {
       --{ "n", "<leader>r", "<Nop>", desc = "Rest", noremap = false },
-      { "n", "<leader>crr", "<Plug>RestNvim", desc = "Run the request under cursor", noremap = false },
-      { "n", "<leader>crp", "<Plug>RestNvimPreview", desc = "Preview the request cURL command", noremap = false },
-      { "n", "<leader>crl", "<Plug>RestNvimLast", desc = "Re-run the last request", noremap = false },
+      --{ "n", "<leader>crr", "<Plug>RestNvim", desc = "Run the request under cursor", noremap = false },
+      --{ "n", "<leader>crp", "<Plug>RestNvimPreview", desc = "Preview the request cURL command", noremap = false },
+      --{ "n", "<leader>crl", "<Plug>RestNvimLast", desc = "Re-run the last request", noremap = false },
       --{ "n", "<leader>ru", "<Plug>RestNvimRun" },
       --{ "n", "<leader>rf", "<Plug>RestNvimRunLast" },
       --{ "n", "<leader>rc", "<Plug>RestNvimContinue" },
