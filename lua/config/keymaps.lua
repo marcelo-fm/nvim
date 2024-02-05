@@ -41,3 +41,5 @@ vim.api.nvim_set_keymap(
   ":Copilot panel <CR>",
   { desc = "Open Copilot Panel", noremap = true, silent = true }
 )
+
+vim.api.nvim_set_keymap("n", "<leader>e", ":Oil<CR>", { desc = "Open directory", noremap = true, silent = true })
