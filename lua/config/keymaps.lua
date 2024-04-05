@@ -43,23 +43,3 @@ vim.api.nvim_set_keymap(
 )
 
 vim.api.nvim_set_keymap("n", "<leader>e", ":Oil<CR>", { desc = "Open directory", noremap = true, silent = true })
-
-vim.api.nvim_set_keymap("n", "<leader>r", "<Nop>", { noremap = true, silent = true, desc = "Rest" })
-vim.api.nvim_set_keymap(
-  "n",
-  "<leader>crr",
-  "<Plug>RestNvim",
-  { desc = "Run the request under cursor", noremap = true, silent = true }
-)
-vim.api.nvim_set_keymap(
-  "n",
-  "<leader>crp",
-  "<Plug>RestNvimPreview",
-  { desc = "Preview the request cURL command", noremap = true, silent = true }
-)
-vim.api.nvim_set_keymap(
-  "n",
-  "<leader>crl",
-  "<Plug>RestNvimLast",
-  { desc = "Re-run the last request", noremap = true, silent = true }
-)
