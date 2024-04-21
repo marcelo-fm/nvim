@@ -121,7 +121,6 @@ return {
           args = { vim.fn.stdpath("data") .. "/lazy/vscode-js-debug", "${port}" }, -- Update the path
         },
       }
-
       require("dap").configurations.javascript = {
         {
           type = "pwa-node",
@@ -196,7 +195,37 @@ return {
       }
     end,
   },
-  { "mfussenegger/nvim-dap-python" },
+  {
+    "mfussenegger/nvim-dap-python",
+    config = function()
+      -- Your existing configuration for nvim-dap-python
+
+      local dap = require("dap")
+      local dap_python = require("dap-python")
+      dap_python.setup()
+
+      -- Django debug configuration
+      table.insert(dap.configurations.python, {
+        type = "python",
+        request = "launch",
+        name = "Django",
+        program = "manage.py",
+        args = { "runserver" },
+        django = true,
+        justMyCode = false,
+        pythonPath = function()
+          local cwd = vim.fn.getcwd()
+          if vim.fn.glob(cwd .. "/venv/bin/python") ~= "" then
+            return cwd .. "/venv/bin/python"
+          elseif vim.fn.glob(cwd .. "/.venv/bin/python") ~= "" then
+            return cwd .. "/.venv/bin/python"
+          else
+            return "/usr/bin/python"
+          end
+        end,
+      })
+    end,
+  },
   { "mfussenegger/nvim-jdtls" },
   { "leoluz/nvim-dap-go" },
   {
