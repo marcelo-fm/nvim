@@ -1,51 +1,51 @@
 return {
-  {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    priority = 1000,
-    config = function()
-      require("catppuccin").setup({
-        flavour = "macchiato", -- latte, frappe, macchiato, mocha
-      })
-    end,
-  },
+  -- {
+  --   "catppuccin/nvim",
+  --   name = "catppuccin",
+  --   priority = 1000,
+  --   config = function()
+  --     require("catppuccin").setup({
+  --       flavour = "macchiato", -- latte, frappe, macchiato, mocha
+  --     })
+  --   end,
+  -- },
   { "xiyaowong/transparent.nvim" },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
-    },
-  },
-  -- add symbols-outline
-  {
-    "simrat39/symbols-outline.nvim",
-    cmd = "SymbolsOutline",
-    keys = { { "<leader>cs", "<cmd>SymbolsOutline<cr>", desc = "Symbols Outline" } },
-    config = true,
-  },
-
-  -- override nvim-cmp and add cmp-emoji
-  {
-    "hrsh7th/nvim-cmp",
-    dependencies = { "hrsh7th/cmp-emoji" },
-    ---@param opts cmp.ConfigSchema
-    opts = function(_, opts)
-      local cmp = require("cmp")
-      opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" } }))
-    end,
-  },
-  -- add pyright to lspconfig
-  {
-    "neovim/nvim-lspconfig",
-    ---@class PluginLspOpts
-    opts = {
-      ---@type lspconfig.options
-      servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
-        pyright = {},
-      },
-    },
-  },
+  -- {
+  --   "LazyVim/LazyVim",
+  --   opts = {
+  --     colorscheme = "catppuccin",
+  --   },
+  -- },
+  -- -- add symbols-outline
+  -- {
+  --   "simrat39/symbols-outline.nvim",
+  --   cmd = "SymbolsOutline",
+  --   keys = { { "<leader>cs", "<cmd>SymbolsOutline<cr>", desc = "Symbols Outline" } },
+  --   config = true,
+  -- },
+  --
+  -- -- override nvim-cmp and add cmp-emoji
+  -- {
+  --   "hrsh7th/nvim-cmp",
+  --   dependencies = { "hrsh7th/cmp-emoji" },
+  --   ---@param opts cmp.ConfigSchema
+  --   opts = function(_, opts)
+  --     local cmp = require("cmp")
+  --     opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" } }))
+  --   end,
+  -- },
+  -- -- add pyright to lspconfig
+  -- {
+  --   "neovim/nvim-lspconfig",
+  --   ---@class PluginLspOpts
+  --   opts = {
+  --     ---@type lspconfig.options
+  --     servers = {
+  --       -- pyright will be automatically installed with mason and loaded with lspconfig
+  --       pyright = {},
+  --     },
+  --   },
+  -- },
   -- add more treesitter parsers
   {
     "nvim-treesitter/nvim-treesitter",
@@ -93,9 +93,9 @@ return {
   -- then: setup supertab in cmp
   {
     "hrsh7th/nvim-cmp",
-    dependencies = {
-      "hrsh7th/cmp-emoji",
-    },
+    -- dependencies = {
+    --   "hrsh7th/cmp-emoji",
+    -- },
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
       local has_words_before = function()
