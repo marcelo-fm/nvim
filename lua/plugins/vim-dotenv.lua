@@ -1,1 +1,1 @@
-return { { "tpope/vim-dotenv" } }
+return { { "tpope/vim-dotenv" }, { "ellisonleao/dotenv.nvim" } }

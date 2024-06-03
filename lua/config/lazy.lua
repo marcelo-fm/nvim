@@ -41,20 +41,3 @@ require("lazy").setup({
     },
   },
 })
-
--- Define a function to set up the autocommand for .xlsx files
-local function setup_xlsx_handler()
-  vim.cmd([[
-    autocmd BufReadCmd *.xlsx silent !xdg-open % &
-    ]])
-  vim.cmd([[
-    autocmd BufReadCmd *.docx silent !xdg-open % &
-    ]])
-  vim.cmd([[
-    autocmd BufReadCmd *.pdf silent !xdg-open % &
-    ]])
-end
-
--- Call the function to set up the handler
-setup_xlsx_handler()
-vim.cmd(":Copilot disable")

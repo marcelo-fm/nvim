@@ -1,34 +1,56 @@
 return {
   {
     "epwalsh/obsidian.nvim",
-    enabled = true,
     version = "*",
     lazy = true,
-    ft = "markdown",
     event = {
-      "BufReadPre /mnt/c/Users/marcelo.mesquita/Documentos/'Obsidian Vault'/**.md",
-      "BufNewFile /mnt/c/Users/marcelo.mesquita/Documentos/'Obsidian Vault'/**.md",
+      "BufReadPre /mnt/c/Users/marcelo.mesquita/Documentos/obsidian/**.md",
+      "BufNewFile /mnt/c/Users/marcelo.mesquita/Documentos/obsidian/**.md",
+      "BufReadPre ~/Documents/obsidian/**.md",
+      "BufNewFile ~/Documents/obsidian/**.md",
     },
     dependencies = {
       "nvim-lua/plenary.nvim",
       "hrsh7th/nvim-cmp",
-      " nvim-telescope/telescope.nvim",
-      "nvim-treesitter",
+      "nvim-telescope/telescope.nvim",
+      "nvim-treesitter/nvim-treesitter",
     },
-    config = function()
-      require("obsidian").setup({
-        workspaces = {
-          {
-            name = "personal",
-            path = "/mnt/c/Users/marcelo.mesquita/Documentos/'Obsidian Vault'",
-          },
+    opts = {
+      workspaces = {
+        {
+          name = "pessoal",
+          path = "/mnt/c/Users/marcelo.mesquita/Documentos/obsidian",
         },
-        completion = {
-          nvim_cmp = true,
-          min_chars = 2,
+        {
+          name = "pessoal-wsl",
+          path = "~/Documents/obsidian",
         },
-        new_notes_location = "notes_subdir",
-      })
-    end,
+      },
+      completion = {
+        nvim_cmp = true,
+        min_chars = 2,
+      },
+      daily_notes = {
+        folder = "'3 - Recursos'/'Daily Notes'",
+        template = "Templates/'Daily notes template'",
+      },
+      new_notes_location = "notes_subdir",
+      templates = {
+        folder = "Templates",
+        date_format = "%Y-%m-%d",
+        time_format = "%H:%M",
+        substitutions = {},
+      },
+      picker = {
+        name = "telescope.nvim",
+        mappings = {
+          new = "<C-x>",
+          insert_link = "<C-l>",
+        },
+      },
+      sort_by = "modified",
+      sort_reversed = true,
+      open_notes_in = "current",
+    },
   },
 }
