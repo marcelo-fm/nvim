@@ -9,7 +9,6 @@ return {
   --     })
   --   end,
   -- },
-  { "xiyaowong/transparent.nvim" },
   -- {
   --   "LazyVim/LazyVim",
   --   opts = {

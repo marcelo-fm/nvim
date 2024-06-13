@@ -27,3 +27,6 @@ vim.keymap.set("n", "<leader>e", ":Oil--float<CR>", { desc = "Open directory", n
 -- vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>', { noremap = false })
 -- vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>', { noremap = false })
 -- vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>', { noremap = false })
+
+vim.keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>")
+vim.keymap.set("n", "<leader>fmg", "<cmd>CellularAutomaton game_of_life<CR>")

@@ -118,6 +118,11 @@ return {
         sorting_strategy = "ascending",
         winblend = 0,
       },
+      pickers = {
+        colorscheme = {
+          enable_preview = true,
+        },
+      },
     },
   },
 }
