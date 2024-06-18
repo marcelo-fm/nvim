@@ -10,7 +10,7 @@ return {
         end,
       },
       {
-        "barrett-ruth/telescope-http.nvim",
+        "barrett-ruth/http-codes.nvim",
         config = function()
           require("telescope").load_extension("http")
         end,
