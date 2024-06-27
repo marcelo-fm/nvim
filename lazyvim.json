@@ -5,6 +5,7 @@
     "lazyvim.plugins.extras.dap.core",
     "lazyvim.plugins.extras.editor.dial",
     "lazyvim.plugins.extras.editor.harpoon2",
+    "lazyvim.plugins.extras.editor.inc-rename",
     "lazyvim.plugins.extras.lang.docker",
     "lazyvim.plugins.extras.lang.go",
     "lazyvim.plugins.extras.lang.json",
@@ -22,4 +23,3 @@
     "NEWS.md": "6077"
   },
   "version": 6
-}
