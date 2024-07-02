@@ -210,7 +210,7 @@ return {
         request = "launch",
         name = "Django",
         program = "manage.py",
-        args = { "runserver" },
+        args = { "runserver --noasgi localhost:8000" },
         django = true,
         justMyCode = false,
         pythonPath = function()
