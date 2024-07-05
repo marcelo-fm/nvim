@@ -1,10 +1,10 @@
--- Options are automatically loaded before lazy.nvim startup
--- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
--- Add any additional options here
+require "nvchad.options"
 
--- Sync clipboard between OS and Neovim.
---  Remove this option if you want your OS clipboard to remain independent.
---  See `:help 'clipboard'`
+-- add yours here!
+
+local o = vim.o
+o.cursorlineopt ='both' -- to enable cursorline!
+
 vim.opt.clipboard = "unnamedplus"
 
 local function is_wsl()
@@ -66,3 +66,4 @@ end
 
 -- Call the function to set up the handler
 setup_file_handler()
+
