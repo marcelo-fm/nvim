@@ -20,4 +20,5 @@ return {
     vim.keymap.set("n", "<leader>-", require("oil").toggle_float)
   end,
   dependencies = { "nvim-tree/nvim-web-devicons" },
+  -- cmd = { "Oil" },
 }

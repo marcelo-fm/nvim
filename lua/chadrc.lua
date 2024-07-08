@@ -6,7 +6,7 @@ local M = {}
 
 M.ui = {
   theme_toggle = { "gruvbox", "gruvbox_light" },
-  theme = "gruvbox_light",
+  theme = "gruvbox",
 
   cmp = {
     icons = true,

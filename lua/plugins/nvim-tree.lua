@@ -1,1 +1,1 @@
-return { "nvim-tree/nvim-tree.lua", enabled = false }
+return { "nvim-tree/nvim-tree.lua", enabled = true }
