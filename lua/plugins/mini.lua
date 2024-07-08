@@ -36,7 +36,7 @@ return {
       --  Check out: https://github.com/echasnovski/mini.nvim
       require('mini.animate').setup()
       require('mini.tabline').setup()
-      require('mini.starter').setup()
+      -- require('mini.starter').setup()
       require('mini.map').setup()
       require('mini.completion').setup()
       require('mini.pairs').setup()
