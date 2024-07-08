@@ -5,8 +5,8 @@
 local M = {}
 
 M.ui = {
-  theme_toggle = { "gruvbox", "gruvbox_light" },
-  theme = "gruvbox",
+  theme_toggle = { "flexoki", "flexoki_light" },
+  theme = "flexoki",
 
   cmp = {
     icons = true,
