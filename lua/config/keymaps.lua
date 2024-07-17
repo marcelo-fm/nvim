@@ -20,8 +20,8 @@ vim.keymap.set(
   { desc = "Open Copilot Panel", noremap = true, silent = true }
 )
 
-vim.keymap.set("n", "<leader>e", ":Oil--float<CR>", { desc = "Open directory", noremap = true, silent = true })
-
+vim.keymap.set("n", "<leader>e", "<CMD>Oil<CR>", { desc = "Open directory", noremap = true, silent = true })
+vim.keymap.set("n", "<leader>-", "<CMD>Oil --float<CR>", { desc = "Open directory", noremap = true, silent = true })
 -- TIP: Disable arrow keys in normal mode
 -- vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>', { noremap = false })
 -- vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>', { noremap = false })
