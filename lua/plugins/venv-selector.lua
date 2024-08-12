@@ -1,6 +1,6 @@
 return {
   "linux-cultist/venv-selector.nvim",
-  branch = "main",
+  branch = "regexp",
   cmd = "VenvSelect",
   enabled = function()
     return LazyVim.has("telescope.nvim")
