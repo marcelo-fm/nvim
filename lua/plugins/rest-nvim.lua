@@ -1,11 +1,13 @@
 return {
   {
     "vhyrro/luarocks.nvim",
+    enabled = false,
     priority = 1000,
     config = true,
   },
   {
     "rest-nvim/rest.nvim",
+    enabled = false,
     ft = "http",
     dependencies = { "luarocks.nvim" },
     config = function()
