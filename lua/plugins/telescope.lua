@@ -3,6 +3,14 @@ return {
     "nvim-telescope/telescope.nvim",
     dependencies = {
       {
+        "andrew-george/telescope-themes",
+        config = function()
+          -- load extension
+          local telescope = require("telescope")
+          telescope.load_extension("themes")
+        end,
+      },
+      {
         "nvim-telescope/telescope-fzf-native.nvim",
         build = "make",
         config = function()

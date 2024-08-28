@@ -9,7 +9,7 @@ return {
       -- Set to false if you still want to use netrw.
       default_file_explorer = true,
       keymaps = {
-        ["q"] = "<cmd>q<CR>",
+        ["q"] = "<cmd>bdelete<CR>",
         ["g?"] = "actions.show_help",
         ["<CR>"] = "actions.select",
         ["<C-s>"] = "actions.select_vsplit",
