@@ -2,23 +2,23 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
-vim.keymap.set("n", "<leader>Dt", ":DBUIToggle<CR>", { desc = "Toggle DBUI", noremap = true, silent = true })
-vim.keymap.set(
-  "n",
-  "<leader>Dc",
-  ":DBUIAddConnection<CR>",
-  { desc = "Add DBUI Connection", noremap = true, silent = true }
-)
-vim.keymap.set("n", "<leader>Df", ":DBUIFindBuffer<CR>", { desc = "Find DBUI Buffer", noremap = true, silent = true })
-vim.keymap.set("n", "<leader>fd", ":DBUIFindBuffer<CR>", { desc = "Find DBUI Buffer", noremap = true, silent = true })
-vim.keymap.set("n", "<leader>cce", ":Copilot enable <CR>", { desc = "Enable Copilot", noremap = true, silent = true })
-vim.keymap.set("n", "<leader>ccd", ":Copilot disable <CR>", { desc = "Disable Copilot", noremap = true, silent = true })
-vim.keymap.set(
-  "n",
-  "<leader>ccp",
-  ":Copilot panel <CR>",
-  { desc = "Open Copilot Panel", noremap = true, silent = true }
-)
+-- vim.keymap.set("n", "<leader>Dt", ":DBUIToggle<CR>", { desc = "Toggle DBUI", noremap = true, silent = true })
+-- vim.keymap.set(
+--   "n",
+--   "<leader>Dc",
+--   ":DBUIAddConnection<CR>",
+--   { desc = "Add DBUI Connection", noremap = true, silent = true }
+-- )
+-- vim.keymap.set("n", "<leader>Df", ":DBUIFindBuffer<CR>", { desc = "Find DBUI Buffer", noremap = true, silent = true })
+-- vim.keymap.set("n", "<leader>fd", ":DBUIFindBuffer<CR>", { desc = "Find DBUI Buffer", noremap = true, silent = true })
+-- vim.keymap.set("n", "<leader>cce", ":Copilot enable <CR>", { desc = "Enable Copilot", noremap = true, silent = true })
+-- vim.keymap.set("n", "<leader>ccd", ":Copilot disable <CR>", { desc = "Disable Copilot", noremap = true, silent = true })
+-- vim.keymap.set(
+--   "n",
+--   "<leader>ccp",
+--   ":Copilot panel <CR>",
+--   { desc = "Open Copilot Panel", noremap = true, silent = true }
+-- )
 
 vim.keymap.set("n", "<leader>e", "<CMD>Oil<CR>", { desc = "Open directory", noremap = true, silent = true })
 vim.keymap.set("n", "<leader>-", "<CMD>Oil --float<CR>", { desc = "Open directory", noremap = true, silent = true })
