@@ -20,7 +20,7 @@ return {
     workspaces = {
       {
         name = "personal",
-        path = "/mnt/c/Users/marcelo.mesquita/Documents/obsidian",
+        path = os.getenv("OBSIDIAN_VAULT"),
       },
     },
     notes_subdir = "1 - Notas",
