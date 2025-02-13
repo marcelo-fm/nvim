@@ -13,7 +13,7 @@ return {
       view_option = { show_hidden = true },
       default_file_explorer = true,
     })
-    -- vim.keymap.set('n', '<leader>e', '<CMD>Oil<CR>', { desc = 'Open directory' })
+    vim.keymap.set("n", "<leader>e", "<CMD>Oil<CR>", { desc = "Open directory" })
     vim.keymap.set("n", "<leader>_", require("oil").toggle_float)
   end,
 }
