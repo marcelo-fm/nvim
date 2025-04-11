@@ -1,1 +1,4 @@
-return { "benlubas/molten-nvim" }
+return {
+  { "benlubas/molten-nvim" },
+  { "Vigemus/iron.nvim" },
+}
