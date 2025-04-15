@@ -2,6 +2,29 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
+      djangohtml = {
+        settings = {
+          tailwindCSS = {
+            experimental = {
+              classRegex = {
+                { "class\\s*[:=]\\s*['\"]([^'\"]*)['\"]", "class" },
+                { "className\\s*[:=]\\s*['\"]([^'\"]*)['\"]", "className" },
+              },
+            },
+            includeLanguages = {
+              djangohtml = "html",
+            },
+            validate = true,
+            lint = {
+              cssConflict = "warning",
+              invalidApply = "error",
+              invalidScreen = "error",
+              invalidVariant = "error",
+              invalidConfigPath = "error",
+            },
+          },
+        },
+      },
       ruff = {
         settings = {
           lint = {
@@ -29,6 +52,7 @@ return {
           },
           python = {
             analysis = {
+              autoImportCompletions = true, -- Enable auto import capabilities
               -- ignore = { "*" }, -- Using Ruff
               -- typeCheckingMode = "off", -- Using mypy
             },
