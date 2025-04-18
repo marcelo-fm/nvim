@@ -13,6 +13,6 @@ return {
     },
   },
   { "alligator/accent.vim" },
-  { "andreasvc/vim-256noir" },
+  { "andreasvc/vim-256noir", name = "vim-256noir" },
   { "nyoom-engineering/oxocarbon.nvim" },
 }

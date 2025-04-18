@@ -34,3 +34,10 @@ vim.g.clipboard = {
   --   ["*"] = require("vim.ui.clipboard.osc52").paste("*"),
   -- },
 }
+vim.api.nvim_create_autocmd("Signal", {
+  pattern = "USR1",
+  callback = function()
+    vim.cmd("source $HOME/.config/nvim/init.lua")
+    vim.notify("Neovim config reloaded!")
+  end,
+})
