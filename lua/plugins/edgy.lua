@@ -16,13 +16,6 @@ return {
     local opts = {
       bottom = {
         {
-          ft = "fugitive",
-          size = { height = 0.4 },
-          filter = function(buf, win)
-            return vim.api.nvim_win_get_config(win).relative == ""
-          end,
-        },
-        {
           ft = "toggleterm",
           size = { height = 0.4 },
           filter = function(buf, win)
@@ -55,6 +48,13 @@ return {
       },
       right = {
         { title = "Grug Far", ft = "grug-far", size = { width = 0.4 } },
+        {
+          ft = "fugitive",
+          size = { width = 50 },
+          filter = function(buf, win)
+            return vim.api.nvim_win_get_config(win).relative == ""
+          end,
+        },
       },
       keys = {
         -- increase width
