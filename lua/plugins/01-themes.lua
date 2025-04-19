@@ -15,4 +15,6 @@ return {
   { "alligator/accent.vim" },
   { "andreasvc/vim-256noir", name = "vim-256noir" },
   { "nyoom-engineering/oxocarbon.nvim" },
+  { "slugbyte/lackluster.nvim" },
+  { "catppuccin/nvim", name = "catppuccin" },
 }
