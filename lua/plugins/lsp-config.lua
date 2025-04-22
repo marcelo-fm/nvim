@@ -2,29 +2,29 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
-      -- djangohtml = {
-      --   settings = {
-      --     tailwindCSS = {
-      --       experimental = {
-      --         classRegex = {
-      --           { "class\\s*[:=]\\s*['\"]([^'\"]*)['\"]", "class" },
-      --           { "className\\s*[:=]\\s*['\"]([^'\"]*)['\"]", "className" },
-      --         },
-      --       },
-      --       includeLanguages = {
-      --         djangohtml = "html",
-      --       },
-      --       validate = true,
-      --       lint = {
-      --         cssConflict = "warning",
-      --         invalidApply = "error",
-      --         invalidScreen = "error",
-      --         invalidVariant = "error",
-      --         invalidConfigPath = "error",
-      --       },
-      --     },
-      --   },
-      -- },
+      jinja_lsp = {
+        settings = {
+          tailwindCSS = {
+            experimental = {
+              classRegex = {
+                { "class\\s*[:=]\\s*['\"]([^'\"]*)['\"]", "class" },
+                { "className\\s*[:=]\\s*['\"]([^'\"]*)['\"]", "className" },
+              },
+            },
+            includeLanguages = {
+              jinja = "html",
+            },
+            validate = true,
+            lint = {
+              cssConflict = "warning",
+              invalidApply = "error",
+              invalidScreen = "error",
+              invalidVariant = "error",
+              invalidConfigPath = "error",
+            },
+          },
+        },
+      },
       ruff = {
         settings = {
           lint = {
