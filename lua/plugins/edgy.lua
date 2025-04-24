@@ -55,6 +55,10 @@ return {
             return vim.api.nvim_win_get_config(win).relative == ""
           end,
         },
+        {
+          ft = "avante",
+          size = { width = 50 },
+        },
       },
       keys = {
         -- increase width
