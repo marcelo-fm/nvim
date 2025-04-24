@@ -17,4 +17,6 @@ return {
   { "nyoom-engineering/oxocarbon.nvim" },
   { "slugbyte/lackluster.nvim" },
   { "catppuccin/nvim", name = "catppuccin" },
+  { "kdheepak/monochrome.nvim" },
+  { "Mofiqul/dracula.nvim" },
 }
