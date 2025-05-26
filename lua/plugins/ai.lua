@@ -19,7 +19,7 @@ return {
       { "<c-s>", "<CR>", ft = "copilot-chat", desc = "Submit Prompt", remap = true },
       { "<leader>a", "", desc = "+ai", mode = { "n", "v" } },
       {
-        "<leader>aa",
+        "<leader>aA",
         function()
           return require("CopilotChat").toggle()
         end,
