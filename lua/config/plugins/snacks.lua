@@ -5,8 +5,9 @@ return {
 	---@type snacks.Config
 	opts = {
 		dashboard = dashboard_config,
-		picker = picker_config,
+		picker = { enabled = false },
 		explorer = {
+			enabled = false,
 			replace_netrw = true, -- Replace netrw with the snacks explorer
 		},
 	},

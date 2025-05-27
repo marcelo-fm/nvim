@@ -7,7 +7,7 @@ return -- NOTE: Plugins can specify dependencies.
 { -- Fuzzy Finder (files, lsp, etc)
 	"nvim-telescope/telescope.nvim",
 	event = "VimEnter",
-	enable = false,
+	enable = true,
 	branch = "0.1.x",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
