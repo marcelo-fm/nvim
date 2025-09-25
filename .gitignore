@@ -6,4 +6,3 @@ debug
 foo.*
 *.log
 data
-lua/plugins/theme.lua
